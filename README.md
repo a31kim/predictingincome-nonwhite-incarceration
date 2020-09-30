@@ -14,7 +14,7 @@ _**What, if any, is the relationship between incarceration rates/racial demograp
 ## Data Question - Open Data
 
 All of the data used in this project was gathered from [The Opportunity Atlas](https://www.opportunityatlas.org/).
-The original data files can be found in the repository [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/tree/master/original_data).
+The folder containing the original data files can be found in the repository [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/tree/master/original_data), or individually below.
 
 1. [Baltimore Incarceration Rates](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/original_data/balti_INCARC.xlsx)
 2. [Baltimore % Non-White](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/original_data/balti_%25NW.xlsx)  
