@@ -25,6 +25,7 @@ The original data files can be found in the repository [here](https://github.com
 
 ## Data Question - Open Data
 _All data used in this project is from [The Opportunity Atlas](https://www.opportunityatlas.org/)._
+
 **The Opportunity Atlas** seeks to answer the question: "Which neighborhoods in America offer children the best chance at a better life than their parents?". In an attempt to gauge the relative social mobility of these communities, they have gathered anonymous data from over 20 million Americans, tracking them from their childhood to their mid-thirties.
 
 
