@@ -43,7 +43,7 @@ The data is difficult to display graphically due to the multi-variable nature of
 
 ### Baltimore, MD
 
-The full Baltimore dataset used for the regression can be found [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/compiled_analysis.xlsx), in the "balti_compiled_data" sheet. The complete set of regression values can be found [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/compiled_analysis.xlsx), in the "regression" sheet.
+The full Baltimore dataset used for the regression can be found [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/compiled_analysis.xlsx), in the "balti_compiled_data" sheet. The complete set of regression values can be found [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/compiled_analysis.xlsx), on the left-side of the "regression" sheet.
 
 Below is a table displaying the key values extracted from the Baltimore data regression, along with an equation detailing the numerical relationship between the values.
 ![](.gitbook/assets/balti_values.png)
@@ -54,25 +54,30 @@ Below is a table displaying the key values extracted from the Baltimore data reg
 * The _significance f_ value is extremely small, firmly rejecting the null hypothesis that neither dependent variable contributes to the independent variable.
 * Both of the dependent variables' _p-values_ are smaller than 0.05, meaning that they are both significant.
 
-The regression model determined by this dataset indicates that both the incarceration rate and percentage of non-white residents has a significant negative impact on an area's predicted household income. The coefficients in the formula (-478,378 for incarceration, -7,692 for non-white) numerically demonstrate this conclusion.
+The above observations demonstrate the adequate significance of the data. The regression model determined by this dataset indicates that both the incarceration rate and percentage of non-white residents has a significant negative impact on an area's predicted household income. The coefficients in the formula (-478,378 for incarceration, -7,692 for non-white) numerically demonstrate this conclusion.
 
 
 ### Washington, D.C.
 
-The compiled dataset
+The full D.C. dataset used for the regression can be found [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/compiled_analysis.xlsx), in the "dc_compiled_data" sheet. The complete set of regression values can be found [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/compiled_analysis.xlsx), on the right-side of the "regression" sheet.
 
-This graph clearly displays a negative relationship between incarceration rates and household income. Communities like Georgetown and the Naval Observatory have significantly higher incomes and much lower incarceration rates than areas like Barry Farm and the Capitol Riverfront.
+Below is a table displaying the key values extracted from the Baltimore data regression, along with an equation detailing the numerical relationship between the values.
+![](.gitbook/assets/dc_values.png)
+
+**Observations from this dataset:**
+* The _r-square_ value is not particulary large, but it is larger than 0.5, indicating a relatively decent regression model fit.
+* The _standard error_ is perhaps worth nothing, considering the household income dataset only ranges from ~$20,000 to ~$80,000.
+* The _significance f_ value is extremely small, firmly rejecting the null hypothesis that neither dependent variable contributes to the independent variable.
+* Both of the dependent variables' _p-values_ are smaller than 0.05, meaning that they are both significant.
+
+The above observations demonstrate the adequate significance of the data. The regression model determined by this dataset indicates that both the incarceration rate and percentage of non-white residents has a significant negative impact on an area's predicted household income. The coefficients in the formula (-392,430 for incarceration, -22,783 for non-white) numerically demonstrate this conclusion.
 
 
-#### Other Data
+## Data Application and Business Answer
 
-Looking at each neighborhood/area individually and examining its relationship between these two metrics was very interesting. The large data set is a little too large and unruly to display in this brief report, but you can view the data and the graphs yourself [here](https://github.com/a31kim/baltimoredc-male-incarceration-income/blob/master/comparison.xlsx).
+The data analysis presented in this project numerically demonstrates the qualitative assertion that racial demographics and incarceration rates of an area are significantly correlated with its predicted average household income. While it would be too presumptive to describe this relationship as causal, it is worth noting the incidence of mass incarceration and significant racial discrimination in many metropolitan areas. The regression model implies that communities with higher rates of non-white residents and incarceration are much more likely to have limited access to the same economic opportunities available to more white, lower crime areas within the same city. It is perhaps worth investigating the mutli-faceted nature of this phenomenon, such as the role of inadequate educational and employment services.
 
-## Data Application
+In addition to the general conclusions that can be drawn from this project, a comparison between the two cities' regression models yields an interesting difference worth noting. Compared to D.C., the equation produced by the Baltimore dataset regression indicates a much smaller effect of the percentage of non-white residents on income. In short, race seems to play a much larger role in determining household income in D.C. than in Baltimore. While this project does not currently seek to examine the reasoning behind this, it could possibly be related to the lower percentage of Whites in Baltimore [29.6%](https://en.wikipedia.org/wiki/History_of_White_Americans_in_Baltimore#:~:text=By%20the%201990%20United%20States,%25%20was%20non%2DHispanic%20white.) compared to [42.2%](https://en.wikipedia.org/wiki/Demographics_of_Washington,_D.C.#:~:text=According%20to%202018%20US%20Census,from%20two%20or%20more%20races.) in D.C. Perhaps the larger population of non-whites in Baltimore has simply resulted in a larger dispersion of income across the group.
 
-The data analysis presented in this project adequately demonstrates the widely assumed negative relationship between household income and incarceration rates. The data does not seem to indicate any difference between Baltimore and D.C. in this regard, as the cities displayed very similar relationships. Upon researching some of the more prominent examples, such as those mentioned above, the vast majority of the low-income, high-incarceration communities were in low-educated, underprivileged areas. This is not particularly surprising, but the direct correlation is very interesting in regards to the issue of social mobility and community betterment.
-
-It may have been helpful to have some additional data on the number of crimes committed annually in each area, to get a sense of the relative risk in each community as context for the incarceration data. It would also be interesting to compare this data with the relative primary/secondary education opportunities provided in each area.
-
-As a resident of both cities, I think that it's important to remain cognizant of the entire city's populace, rather than just focusing on your own little bubble. Being a college student in Baltimore is a unique privilege, and analyzing data like this is a reminder of how amazing and rare an opportunity like this is.
+In summation, this data analysis has effectively demonstrated a significant relationship between racial demographics/incarceration rates, and average household income. The sharp contrast between neighborhoods in D.C. like Georgetown ($67,000 average income, 0.5% incarceration, 14% non-white) and Brightwood Park ($30,830 average income, 3.6% incarceration, 95% non-white) is clear. The same dichotomy exists in Baltimore, with neighborhoods like Mount Washington ($70,000 average income, ~0% incarceration, 20% non-white) and Lakeland ($26,000 average income, 3.6% incarceration, 78% non-white). Anecdotal evidence aside, racial demographics and incarceration rates are clearly directly correlated with the average household income of an area in these two cities.
 
