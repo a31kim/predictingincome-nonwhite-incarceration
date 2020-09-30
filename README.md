@@ -2,30 +2,38 @@
 
 ## Background
 
-Over the past few decades, America's prisoner population has skyrocketed to over [2.2 million inmates](https://www.prisonpolicy.org/reports/pie2020.html), the highest per capita imprisonment rate in the entire world. This trend of mass incarceration, which began in the 1970s, has disprortionately affected poor, black communities such as the Fairfield Area in Baltimore, and the housing projects of Southeast D.C. Many of these areas already face the obstacles of an underprivileged schooling system and high-risk neighborhoods - higher incarceration rates serve to further perpetuate the lack of social mobility experienced by these communities.
+Recently, I completed a project that analyzed the relationship between incarceration rates and household incomes in Baltimore, Maryland and Washington, D.C. The resulting combination graphs can be found [here](https://github.com/a31kim/baltimoredc-male-incarceration-income/tree/master/.gitbook/assets): there is a clear and obvious visual correlation between the two variables. However, my data analysis lacked a quantitative backing for this qualitative assertion. In this project, I will determine the numerical correlation between incarceration rates and household income, while additionally including racial demographics as a dependent variable.
 
-The cities of Baltimore, Maryland and Washington, D.C. present similar examples of underprivileged, metropolitan communities. Using data provided by [The Opportunity Atlas](https://www.opportunityatlas.org/), this project will analyze the relationship between incarceration rates and household incomes in different areas in both cities, and compare the resulting data. In particular, I'll be examining whether the expected negative relationship is visibile in the data, and if there are any discrepancies between the imprisonment trends of the two cities.
+I decided to include this variable to see if additional correlation existed between the community's percentage of non-white residents and its average annual household income. Having recently fnished Michelle Alexander's _The New Jim Crow_, I already possessed an underlying notion that high rates of incarceration in predominantly non-white communities would be linked to reduced economic opportunity and income. However, I wanted to examine the public data myself, to get a sense of the numerical extent of this relationship.
 
-I chose to examine this particular metric because I recently finished Michelle Alexander's _The New Jim Crow_, which provides a detailed recount of the caste-like imprisonment system instituted by the U.S. Government over the last few decades. My hometown is technically Potomac, MD, but the data from my area wasn't significant enough to compare with Baltimore, so I decided to use D.C. instead since I only live 15 minutes away.
+As per my previous project, the two cities examined in this data analysis are Baltimore, Maryland and Washington, D.C. Both cities present similar instances of underprivileged, predominantly non-white communities existing alongside gentrified neighborhoods with higher average incomes and far lower incarceration rates. However, no two cities possess the exact same policies or demographics, so it will be interesting to see if there is any noticable difference between the two datasets. Using data provided by [The Opportunity Atlas](https://www.opportunityatlas.org/), this project will analyze quantitative data to try and validate the qualitative assertion that incarceration rates and racial demographics are significantly correlated with household incomes in both Baltimore and D.C.
 
 ## Business Question
-What, if any, is the correlation between incarceration rates/racial demographics and household income in Baltimore and D.C.
+_**What, if any, is the relationship between incarceration rates/racial demographics and household income in Baltimore and D.C.?**_
 
 ## Data Question - Open Data
 
 All of the data used in this project was gathered from [The Opportunity Atlas](https://www.opportunityatlas.org/).
-The original data files can be found in the repository [here](https://github.com/a31kim/baltimoredc-male-incarceration-income/tree/master/originaldata).
+The original data files can be found in the repository [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/tree/master/original_data).
 
-1. [originaldata_balti_incarceration](https://github.com/a31kim/baltimoredc-male-incarceration-income/blob/master/originaldata/originaldata_balti_incarceration.xlsx) contains the data for incarceration rates in various areas within Baltimore city.
-2. [originaldata_balti_income](https://github.com/a31kim/baltimoredc-male-incarceration-income/blob/master/originaldata/originaldata_balti_incarceration.xlsx) contains the data for household incomes in various areas within Batlimore city.  
-3. [originaldata_dc_incarceration](https://github.com/a31kim/baltimoredc-male-incarceration-income/blob/master/originaldata/originaldata_dc_incarceration.xlsx) contains the data for incarceration rates in various areas within Baltimore city.
-4. [originaldata_dc_income](https://github.com/a31kim/baltimoredc-male-incarceration-income/blob/master/originaldata/originaldata_dc_income.xlsx) contains the data for household incomes in various areas within Batlimore city.
+1. [Baltimore Incarceration Rates](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/original_data/balti_INCARC.xlsx)
+2. [Baltimore % Non-White](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/original_data/balti_%25NW.xlsx)  
+3. [Baltimore Household Income](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/original_data/balti_%24.xlsx)
+4. [DC Incarceration Rates](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/original_data/dc_INCARC.xlsx)
+5. [DC % Non-White](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/original_data/dc_%25NW.xlsx)
+6. [DC Household Income](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/original_data/dc_%24.xlsx)
+
+## Data Question - Open Data
+_All data used in this project is from [The Opportunity Atlas](https://www.opportunityatlas.org/)._
+**The Opportunity Atlas** seeks to answer the question: "Which neighborhoods in America offer children the best chance at a better life than their parents?". In an attempt to gauge the relative social mobility of these communities, they have gathered anonymous data from over 20 million Americans, tracking them from their childhood to their mid-thirties.
+
 
 ## Data Question - Analysis
 
 Microsoft Excel was used to answer:
-* **What is the relationship between household income and incarceration rates in Baltimore and D.C.?** Examining the trends of area-based data, comparing the fluxes between the two metrics
-* **Do Baltimore and D.C. demonstrate similar characteristics regarding the income/incarceration relationship?** Comparing data between the two cities to determine if one city displays significantly different trends
+* **What is the correlation between incarceration rates/racial demographics and household income in Baltimore and D.C.?** Performing multiple linear regression to produce an equation that produces a _y-value_ of household income, using incarceration rates and percentage of non-white residents as the _x-values_.
+* **Are both variables significant?** Analyzing the _p-values_ and _significance f_ values in order to determine whether or not both variables can be deemed as significant.
+* **Is the regression model an accurate representation of the data?** Analyzing the standard errors and r-square values to determine the accuracy of the regression model presented by the data analysis.
 
 ## Data Answer
 
