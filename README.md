@@ -41,7 +41,7 @@ Microsoft Excel was used to answer:
 The data is difficult to display graphically due to the multi-variable nature of the dataset. Instead, I have picked out a few key variables to highlight the significance of the dependent variables, and their correlation with the independent variables.
 
 
-#### Baltimore, MD
+### Baltimore, MD
 
 The full Baltimore dataset used for the regression can be found [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/compiled_analysis.xlsx), in the "balti_compiled_data" sheet. The complete set of regression values can be found [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/compiled_analysis.xlsx), in the "regression" sheet.
 
@@ -57,7 +57,7 @@ Below is a table displaying the key values extracted from the Baltimore data reg
 The regression model determined by this dataset indicates that both the incarceration rate and percentage of non-white residents has a significant negative impact on an area's predicted household income. The coefficients in the formula (-478,378 for incarceration, -7,692 for non-white) numerically demonstrate this conclusion.
 
 
-#### Washington, D.C.
+### Washington, D.C.
 
 The compiled dataset
 
