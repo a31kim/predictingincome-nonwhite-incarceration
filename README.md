@@ -38,19 +38,29 @@ Microsoft Excel was used to answer:
 
 ## Data Answer
 
-The data is best summarized with a combination graph displaying both metrics.
+The data is difficult to display graphically due to the multi-variable nature of the dataset. Instead, I have picked out a few key variables to highlight the significance of the dependent variables, and their correlation with the independent variables.
 
-#### Washington, D.C. Graph
+#### Baltimore, MD
 
-![](.gitbook/assets/dc_chart.png)
+The full Baltimore dataset used for the regression can be found [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/compiled_analysis.xlsx), in the "balti_compiled_data" sheet. The complete set of regression values can be found [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/compiled_analysis.xlsx), in the "regression" sheet.
+
+Below is a table displaying the key values extracted from the Baltimore data regression, along with an equation detailing the numerical relationship between the values.
+![](.gitbook/assets/balti_values.png)
+
+**Observations from this dataset:**
+* The _r-square_ value is not particulary large, but it is larger than 0.5, indicating a relatively decent regression model fit.
+* The _standard error_ is perhaps worth nothing, considering the household income dataset only ranges from ~$20,000 to ~$70,000.
+* The _significance f_ value is extremely small, firmly rejecting the null hypothesis that neither dependent variable contributes to the independent variable.
+* Both of the dependent variables' _p-values_ are smaller than 0.05, meaning that they are both significant.
+
+The regression model determined by this dataset indicates that both the incarceration rate and percentage of non-white residents has a significant negative impact on an area's predicted household income. The coefficients in the formula (-478,378 for incarceration, -7,692 for non-white) numerically demonstrate this conclusion.
+
+#### Washington, D.C.
+
+The compiled dataset
 
 This graph clearly displays a negative relationship between incarceration rates and household income. Communities like Georgetown and the Naval Observatory have significantly higher incomes and much lower incarceration rates than areas like Barry Farm and the Capitol Riverfront.
 
-#### Baltimore, MD Graph
-
-![](.gitbook/assets/baltimore_chart.png)
-
-Much like the previous chart (except harder to read), this combination graph clearly shows a negative relationship between incarceration rates and household income. Neighborhoods like Greenmount West face incarceration rates as high as 25%, with household incomes barely reaching $15,000. Meanwhile, areas like Mount Washington experience incarceration rates as low as 0.05%, while benefitting from household incomes in the range of $70,000 a year.
 
 #### Other Data
 
