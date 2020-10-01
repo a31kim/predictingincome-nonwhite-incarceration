@@ -46,7 +46,7 @@ The data is difficult to display graphically due to the multi-variable nature of
 The full Baltimore dataset used for the regression can be found [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/compiled_analysis.xlsx), in the "balti_compiled_data" sheet. The complete set of regression values can be found [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/compiled_analysis.xlsx), on the left-side of the "regression" sheet.
 
 Below is a table displaying the key values extracted from the Baltimore data regression, along with an equation detailing the numerical relationship between the values.
-![](.gitbook/assets/balti_values.png)
+![](.gitbook/assets/balti_important.png)
 
 **Observations from this dataset:**
 * The _r-square_ value is not particulary large, but it is larger than 0.5, indicating a relatively decent regression model fit.
@@ -62,7 +62,7 @@ The above observations demonstrate the adequate significance of the data. The re
 The full D.C. dataset used for the regression can be found [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/compiled_analysis.xlsx), in the "dc_compiled_data" sheet. The complete set of regression values can be found [here](https://github.com/a31kim/regression-income-nonwhite-incarceration/blob/master/compiled_analysis.xlsx), on the right-side of the "regression" sheet.
 
 Below is a table displaying the key values extracted from the Baltimore data regression, along with an equation detailing the numerical relationship between the values.
-![](.gitbook/assets/dc_values.png)
+![](.gitbook/assets/dc_important.png)
 
 **Observations from this dataset:**
 * The _r-square_ value is not particulary large, but it is larger than 0.5, indicating a relatively decent regression model fit.
